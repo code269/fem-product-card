@@ -15,7 +15,6 @@
 }
 
 html {
-  margin: 0;
   font-size: 14px;
 }
 
@@ -111,4 +110,12 @@ body {
   margin-right: 0.5em;
   position: relative;
   top: 2px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
