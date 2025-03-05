@@ -37,9 +37,13 @@ body {
   background-color: var(--white);
 }
 
-.card__img {
+.card__img-mobile {
   border-radius: 10px 10px 0 0;
   width: 100%;
+}
+
+.card__img-desktop {
+  display: none;
 }
 
 .card__content {
@@ -67,6 +71,7 @@ body {
   margin-top: 0;
   font-size: 2.5rem;
   color: var(--black);
+  line-height: 2.5rem;
 }
 
 .card__text {
@@ -118,4 +123,20 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 800px) {
+  .card {
+    display: flex;
+  }
+
+  .card__img-mobile {
+    display: none;
+  }
+
+  .card__img-desktop {
+    display: inline;
+    border-radius: 10px 0 0 10px;
+    width: 50%;
+  }
 }
